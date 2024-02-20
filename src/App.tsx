@@ -20,19 +20,19 @@ ReactGA.initialize('G-38ZPM6NFPD')
 // Send pageview with a custom path
 ReactGA.send({
   hitType: 'pageview',
-  page: window.location.pathname,
-  title: 'Custom Title',
+  page: '/',
+  // title: 'Custom Title',
 })
 
 // Send a custom event
-// ReactGA.event({
-//   category: 'your category',
-//   action: 'your action',
-//   label: 'your label', // optional
-//   value: 99, // optional, must be a number
-//   nonInteraction: true, // optional, true/false
-//   transport: 'xhr', // optional, beacon/xhr/image
-// })
+ReactGA.event({
+  category: 'your category',
+  action: 'your action',
+  // label: 'your label', // optional
+  value: 99, // optional, must be a number
+  nonInteraction: true, // optional, true/false
+  transport: 'xhr', // optional, beacon/xhr/image
+})
 
 const App = () => {
   return (
