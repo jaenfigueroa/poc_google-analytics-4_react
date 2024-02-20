@@ -3,19 +3,19 @@ import Formulario from './components/Form'
 
 import ReactGA from 'react-ga4'
 
-ReactGA.initialize('G-38ZPM6NFPD')
+// ReactGA.initialize('G-38ZPM6NFPD')
 
 // Multiple products (previously known as trackers)
-// ReactGA.initialize([
-//   {
-//     trackingId: 'G-38ZPM6NFPD',
-//     // gaOptions: {...}, // optional
-//     // gtagOptions: {...}, // optional
-//   },
-//   {
-//     trackingId: 'your second GA measurement id',
-//   },
-// ])
+ReactGA.initialize([
+  {
+    trackingId: 'G-38ZPM6NFPD',
+    // gaOptions: {...}, // optional
+    // gtagOptions: {...}, // optional
+  },
+  // {
+  //   trackingId: 'your second GA measurement id',
+  // },
+])
 
 // Send pageview with a custom path
 ReactGA.send({
